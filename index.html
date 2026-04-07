@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | smo</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="smo - Quality local business. ">
+  <meta name="keywords" content="smo">
+  <meta name="author" content="smo">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="index.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Home | smo">
+  <meta property="og:description" content="smo - Quality local business. ">
+  <meta property="og:site_name" content="smo">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Home | smo">
+  <meta name="twitter:description" content="smo - Quality local business. ">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "smo",
+  "description": "",
+  "telephone": "",
+  "email": ""
+}
+  </script>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .animate-fade-in { animation: fadeIn 0.6s ease-out; }
+    .animate-slide-up { animation: slideUp 0.6s ease-out; }
+    .animate-scale-in { animation: scaleIn 0.5s ease-out; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes scaleIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+    .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+    .gradient-text { background: linear-gradient(135deg, var(--tw-gradient-stops)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  </style>
+</head>
+<body class="bg-white text-slate-900">
+<!-- Page Container -->
+<div class="bg-white text-slate-700 font-sans">
+
+  <!-- Navigation -->
+  <nav x-data="{ open: false }" class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="index.html" class="text-2xl font-bold text-indigo-600">smo</a>
+        </div>
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex md:items-center md:space-x-8">
+          <a href="index.html" class="text-slate-900 hover:text-indigo-600 transition duration-300 font-medium">Home</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-slate-500 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <span class="sr-only">Open main menu</span>
+            <svg x-show="!open" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+            <svg x-show="open" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div x-show="open" @click.away="open = false" class="md:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-900 bg-slate-50 hover:bg-slate-100">Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center text-center text-white bg-gradient-to-br from-indigo-600 to-violet-600 overflow-hidden">
+      <div class="relative z-10 px-4 sm:px-6 lg:px-8">
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter animate-fade-in-down">
+          smo
+        </h1>
+        <p class="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-indigo-100 animate-fade-in-up" style="animation-delay: 0.2s;">
+          Your Trusted Partner for Quality Local Services.
+        </p>
+        <div class="mt-8 animate-fade-in-up" style="animation-delay: 0.4s;">
+          <a href="index.html" class="inline-block bg-white text-indigo-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-slate-100 transform hover:scale-105 transition duration-300 ease-in-out">
+            Explore Our Services
+          </a>
+        </div>
+      </div>
+      <!-- Decorative background shapes -->
+      <div class="absolute top-0 left-0 w-full h-full z-0 opacity-10">
+        <svg class="absolute right-0 bottom-0 -mr-40 -mb-40 h-[40rem] w-[40rem] text-white" fill="currentColor" viewBox="0 0 1024 1024">
+            <circle cx="512" cy="512" r="512" fill-opacity="0.7"></circle>
+        </svg>
+        <svg class="absolute left-0 top-0 -ml-40 -mt-40 h-[30rem] w-[30rem] text-white" fill="currentColor" viewBox="0 0 1024 1024">
+            <circle cx="512" cy="512" r="512" fill-opacity="0.7"></circle>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Features/Why Choose Us Section -->
+    <section class="py-20 sm:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Why Choose smo?</h2>
+          <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600">We are dedicated to providing exceptional service and building lasting relationships.</p>
+        </div>
+        <div class="mt-16 grid gap-10 sm:grid-cols-1 md:grid-cols-3">
+          <!-- Feature Card 1 -->
+          <div class="bg-slate-50 p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-in-out">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-indigo-100 text-indigo-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-12v4m-2-2h4m5 4v4m-2-2h4M17 3h4M19 5v-4m0 18v-4m2 2h-4" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-12v4m-2-2h4m5 4v4m-2-2h4M17 3h4M19 5v-4m0 18v-4m2 2h-4" />
+              </svg>
+            </div>
+            <h3 class="mt-6 text-xl font-bold text-slate-900">Unmatched Quality</h3>
+            <p class="mt-2 text-slate-600">We are committed to delivering the highest standard of service, ensuring excellence in every detail.</p>
+          </div>
+          <!-- Feature Card 2 -->
+          <div class="bg-slate-50 p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-in-out">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-indigo-100 text-indigo-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+            <h3 class="mt-6 text-xl font-bold text-slate-900">Customer-Centric Approach</h3>
+            <p class="mt-2 text-slate-600">Your satisfaction is our priority. We listen, adapt, and deliver services tailored to your specific needs.</p>
+          </div>
+          <!-- Feature Card 3 -->
+          <div class="bg-slate-50 p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-in-out">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-indigo-100 text-indigo-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 20.417V21h18v-5.583a12.02 12.02 0 00-4.382-8.401z" />
+              </svg>
+            </div>
+            <h3 class="mt-6 text-xl font-bold text-slate-900">Reliable & Trustworthy</h3>
+            <p class="mt-2 text-slate-600">Count on us for dependable, on-time service. We build lasting relationships based on trust and integrity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="py-20 sm:py-28 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+          <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Our Services</h2>
+          <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+            A Wide Range of Professional Solutions
+          </p>
+          <p class="mt-4 max-w-2xl text-xl text-slate-600 lg:mx-auto">
+            We offer a variety of services designed to meet the unique needs of our clients and deliver outstanding results.
+          </p>
+        </div>
+        <div class="mt-12">
+          <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+            <div class="relative">
+              <dt>
+                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                  </svg>
+                </div>
+                <p class="ml-16 text-lg leading-6 font-bold text-slate-900">Strategic Consulting</p>
+              </dt>
+              <dd class="mt-2 ml-16 text-base text-slate-600">Expert guidance to help you navigate challenges and seize opportunities for growth.</dd>
+            </div>
+            <div class="relative">
+              <dt>
+                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                  </svg>
+                </div>
+                <p class="ml-16 text-lg leading-6 font-bold text-slate-900">Project Management</p>
+              </dt>
+              <dd class="mt-2 ml-16 text-base text-slate-600">Dedicated oversight to ensure your projects are completed on time, on budget, and to your satisfaction.</dd>
+            </div>
+            <div class="relative">
+              <dt>
+                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                  </svg>
+                </div>
+                <p class="ml-16 text-lg leading-6 font-bold text-slate-900">Custom Solutions</p>
+              </dt>
+              <dd class="mt-2 ml-16 text-base text-slate-600">Tailor-made services crafted to address your specific requirements and business objectives.</dd>
+            </div>
+            <div class="relative">
+              <dt>
+                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <p class="ml-16 text-lg leading-6 font-bold text-slate-900">Ongoing Support</p>
+              </dt>
+              <dd class="mt-2 ml-16 text-base text-slate-600">Continuous assistance and maintenance to ensure long-term success and optimal performance.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gradient-to-br from-violet-600 to-indigo-600">
+      <div class="max-w-4xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+          <span class="block">Ready to Experience the Difference?</span>
+        </h2>
+        <p class="mt-4 text-lg leading-6 text-indigo-200">
+          Let's work together to achieve your goals. Get in touch with us today to start your project.
+        </p>
+        <a href="index.html" class="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto transition duration-300">
+          Contact Us Now
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div class="md:flex md:items-center md:justify-between">
+        <div class="mt-8 md:mt-0 md:order-1">
+          <p class="text-center text-base">&copy; 2026 smo. All rights reserved.</p>
+        </div>
+        <div class="flex justify-center space-x-6 md:order-2">
+          <div class="text-center md:text-left">
+            <h3 class="text-sm font-semibold text-slate-200 tracking-wider uppercase">Contact</h3>
+            <ul class="mt-4 space-y-2">
+              <li>
+                <a href="tel:123-456-7890" class="text-base hover:text-white transition duration-300">123-456-7890</a>
+              </li>
+              <li>
+                <a href="mailto:contact@smo-business.com" class="text-base hover:text-white transition duration-300">contact@smo-business.com</a>
+              </li>
+              <li>
+                <p class="text-base">456 Venture Drive, Innovation City, ST 54321</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Alpine.js for mobile menu interactivity -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+</html>

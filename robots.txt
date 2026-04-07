@@ -1,0 +1,6 @@
+# Robots.txt for smo
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://akhilsivanand5000.github.io/smo-mnouwlmh/sitemap.xml
